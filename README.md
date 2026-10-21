@@ -69,5 +69,5 @@ sampling variance from the 31B model's `temperature: 0.2`.
 
 1. Open `gemma-4-developer-agent.ipynb` on Kaggle with the `L4x4` accelerator.
 2. Attach the three inputs above.
-3. **Run cells 1 → 8 in order** (~12 min for setup + 2-task validation).
-4. Cell 8 produces `/kaggle/working/submission.zip`.
+3. **Run cells in order** (~12 min for setup + 2-task validation).
+4. Cell in end produces `/kaggle/working/submission.zip`.
