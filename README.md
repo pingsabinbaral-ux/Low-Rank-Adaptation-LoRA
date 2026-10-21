@@ -44,27 +44,6 @@ sampling variance from the 31B model's `temperature: 0.2`.
 
 ---
 
-## Repository Structure
-.
-├── gemma-4-developer-agent.ipynb # Main notebook
-├── README.md
-└── submission.zip # Packaged agent
-  The `submission.zip` that gets uploaded to Kaggle follows the competition contract:
-submission.zip
-├── agent.yaml # Root agent config (31B, all tools)
-├── configs/
-│ └── sampling.yaml # temperature=0.2, max_output_tokens=4096
-├── prompts/
-│ └── system.md # Consolidated prompt (v009)
-├── sub_agents/
-│ └── code_analyzer.yaml # Read-only exploration sub-agent
-└── eval_config.yaml # 60 calls / 7 min / 120 turns
-
-
-No `adapters/` directory — baseline submission uses the base model without LoRA.
-
----
-
 ## Requirements
 
 **Hardware:** 4× NVIDIA L4 (24 GB each, 96 GB total) — Kaggle `L4x4` accelerator.
